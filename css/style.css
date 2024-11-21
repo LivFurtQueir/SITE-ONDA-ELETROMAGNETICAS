@@ -1,0 +1,428 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+#titul1{
+    transition: transform 0.3s ease;
+}
+.titulos{
+    width: 70%;
+    height: 10%;
+    padding: 5px;
+    text-align: center;
+    font-weight: 500;
+    margin: 15px auto 35px auto;
+    background-color: #EEBEBE;
+    border-radius: 10px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h3{
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+#ondasEspectro{
+    width: 70%;
+    padding: 10px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: #D9D9D9;
+}
+#ondasEspectro img{
+    width: 100%;
+    border-radius: 15px;
+}
+#espectroCaixas{
+    width: 70%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 600;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.separacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 230px;
+}
+#caixa_rad_micro{
+    width: 270px;  
+}
+#Caixa_imgs{
+    display: flex;
+    justify-content: space-between;
+}
+#Caixa_imgs img{
+    width: 60px;
+    height: auto;
+}
+#grandeRadio{
+    background-color: #F0E267;
+    width: 280px;
+    height: 150px;
+    display: flex;
+    /* justify-content: space-evenly;*/
+    align-items: end;
+    justify-content: end; 
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+#grandeRadio p{
+    width: 140px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+a{
+    height: 100%;
+    text-decoration: none;
+    color: #000;
+}
+#grandeRadio p:first-child{
+    justify-content: center;
+}
+#menorMicro{
+    width: 140px;
+    height: 90px;
+    background-color: #DD5757;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+#divMicro{
+    height: 90px;
+}
+/* .tamanho{
+    width: 90px;
+} */
+.imgEmCima{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.imgEmCima img{
+    width: 60px;
+    height: auto;
+}
+.vertical{
+    width: 90px;
+    height: 150px;
+    
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.vertical a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vertical p{
+    writing-mode: vertical-rl; 
+    transform: rotate(180deg);
+}
+#colorida img{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+#infraDiv{
+    background-color: #FF1111;
+}
+#luzVisivel p{
+    text-align: center;
+}
+#ultravDiv{
+    background-color: #904EE2;
+}
+#raioXDiv{
+    background-color: #8E8E8E;
+}
+#raioGamaDiv{
+    background-color: #000;
+}
+.horizontal p{
+    writing-mode: horizontal-tb !important; 
+    transform: none !important; 
+    color: white !important;
+}
+
+/* hover */
+#grandeRadio:hover, #menorMicro:hover, .vertical:hover, #titul1:hover{
+    transform: scale(1.05);
+}
+
+/* modais */
+#ondasEletrom{
+    padding: 8px;
+    background-color: #C7D5FF;
+}
+#ondasMecanicas{
+    background-color: #ae8bd8;
+    
+}
+.ondasMecanicas.container div{
+    border-bottom: 1px solid #7b47bb;
+}
+.ondasMecanicas.container{
+    background-color: #d2bdeb;
+}
+.ondaRadio, .ondaRadio.container{
+    padding: 8px;
+    background-color: #F0E267;
+}
+.container.ondaRadio div{
+    border-bottom: 1px solid #b8a01c;
+
+}
+.ondaMicro{
+    padding: 8px;
+    background-color: #DD5757;
+}
+.ondaMicro.container{
+    background-color: #e78686;
+}
+.container.ondaMicro div, .container.ondaInfra div{
+    border-bottom: 1px solid #ac0c0c;
+}
+
+.ondaInfra{
+    padding: 8px;
+    background-color: #FF1111;
+}
+.ondaInfra.container{
+    background-color: #f39090;
+}
+
+.ondaUltra{
+    background-color: #904EE2;
+}
+.ondaUltra.container{
+    background-color: #c6a5eef3;
+}
+.ondaUltra.container div{
+    border-bottom: 1px solid #904EE2;
+}
+.ondaUltra h3{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.ondaUltra ul li{
+    list-style-type: none;
+    width: 85%;
+    margin: 0px auto 5px auto;
+}
+.ondaRaioX{
+    background-color: #D9D9D9;
+    
+}
+.ondaRaioX.container{
+    background-color: #8E8E8E;
+}
+.container.ondaRaioX div{
+    border-bottom: 1px solid #3a3939;
+}
+.ondaRaioG{
+    background-color: #000;
+    color: white;
+}
+.ondaRaioG.container{
+    background-color: #c5c5c5;
+    color: #000;
+}
+.ondaRaioG.container div{
+    border-bottom: 1px solid #000;
+}
+.ondaLuz{
+    background-color: #678151;
+}
+.ondaLuz.container{
+    background-color: #8eaa76;
+}
+.ondaLuz.container div{
+    border-bottom: 1px solid #526640;
+}
+
+
+.container{
+    width: 80%;
+    margin: auto;
+    background-color: #C7D5FF;
+    padding: 10px;
+    border-radius: 10px;
+}
+.container div{
+    border-bottom: 1px solid #258bdf;
+    margin: 5px 0px;
+    padding: 14px 14px;
+}
+.container h2{
+    font-size: 26px;
+}
+.container p{
+    font-size: 20px;
+}
+.container .imgModal{
+    display: flex;
+    text-align: center;
+    font-weight: 600;
+    font-size: 17px;
+    padding: 0px;
+    border: none !important;
+}
+.container .imgModal div{
+    border: none !important;
+}
+.imgModal img{
+    height: 80px;
+    width: auto;
+}
+.imgModal.index img{
+    height: 300px;
+    width: auto;
+}
+.imgModal.index{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .imgModal .imgOnda img{
+    height: 120px;
+}
+.container .imgModal .imgOnda{
+    margin-left: auto;
+}
+.voltar{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    margin: 10px auto;
+    text-transform: uppercase;
+    justify-content: space-between;
+    /* transition: transform 0.3s ease; */
+
+}
+.voltar a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 600;
+    color: #161616;
+}
+.voltar img:nth-child(1){
+    width: 60px;
+}
+.voltar img:nth-child(2){
+    width: auto;
+    height: 60px;
+}
+#bodyR{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#ressonancia{
+    width: 75%;
+    height: 80vh;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #dadada;
+}
+#ressonancia h1{
+    text-align: center;
+    font-size: 34px;
+}
+#ressonancia p{
+    padding: 10px;
+    text-align: justify;
+    font-size: 18px;
+}
+#ressonancia div{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin: auto;
+
+    width: 95%;
+    height: 45%;
+
+}
+#ressonancia img{
+    /* width: 25%; */
+    height: 70%;
+}
+#tabelaContainer{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    /* flex-direction: column; */
+    /* justify-content: space-between;
+    align-items: center; */
+}
+#tabelaContainer p{
+    width: 95%;
+    text-align: justify;
+}
+#tabelaLuz{
+    width: 90%;
+    height: auto;
+    font-size: 18px;
+    margin: 10px;
+    
+}
+#tabelaLuz thead{
+    background-color: #bde9b8;
+    text-transform: uppercase;
+}
+#tabelaLuz td{
+    /* border: 1px solid #bde9b8; */
+    text-align: center;
+    background-color: #ddebd0;
+}
+#caracteristicas-ondas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.imgs-tomo-resso{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.imgs-tomo-resso img{
+    width: 200px;
+}
+.img-grande{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-grande img{
+    width: 500px;
+    height: auto;
+}
+#Caracteristicas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
